@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>global_plan</name>
+  <version>1.0.0</version>
+  <description>CARLA Autonomous Navigation with Full ROS 2 Communication</description>
+  <maintainer email="av@todo.todo">av</maintainer>
+  <license>MIT</license>
+
+  <!-- Build tool dependencies -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <!-- Core ROS 2 dependencies -->
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>visualization_msgs</depend>
+  
+  <!-- Transform and coordinate dependencies -->
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>tf_transformations</depend>
+  
+  <!-- CARLA specific dependencies -->
+  <depend>carla_msgs</depend>
+  
+  <!-- Computer vision dependencies -->
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+  
+  <!-- Navigation stack dependencies -->
+  <depend>nav2_common</depend>
+  <depend>nav2_controller</depend>
+  <depend>nav2_planner</depend>
+  <depend>nav2_behaviors</depend>
+  <depend>nav2_lifecycle_manager</depend>
+  <depend>nav2_costmap_2d</depend>
+  <depend>nav2_msgs</depend>
+  <depend>dwb_core</depend>
+  <depend>dwb_critics</depend>
+  <depend>dwb_plugins</depend>
+  
+  <!-- Visualization dependencies -->
+  <depend>rviz2</depend>
+  <depend>rviz_common</depend>
+  <depend>rviz_default_plugins</depend>
+  <depend>rviz_rendering</depend>
+  <depend>nav2_rviz_plugins</depend>
+  
+  <!-- State and robot model dependencies -->
+  <depend>robot_state_publisher</depend>
+  <depend>joint_state_publisher</depend>
+  <depend>urdf</depend>
+  <depend>xacro</depend>
+  
+  <!-- Teleop dependencies -->
+  <depend>teleop_twist_keyboard</depend>
+  <depend>teleop_twist_joy</depend>
+  <depend>joy</depend>
+  
+  <!-- Utility dependencies -->
+  <depend>diagnostic_msgs</depend>
+  <depend>diagnostic_updater</depend>
+  
+  <!-- Python dependencies (handled by setup.py) -->
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-opencv</exec_depend>
+  <exec_depend>python3-matplotlib</exec_depend>
+  <exec_depend>python3-scipy</exec_depend>
+  
+  <!-- Test dependencies -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>python3-pytest</test_depend>
+  
+  <!-- Build type -->
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
